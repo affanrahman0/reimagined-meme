@@ -1,0 +1,17 @@
+#include "huff.h"
+
+int main(int argc, char *argv[])
+{
+    Huffman h1;
+    
+    h1.take_input(argv[1]);
+
+    h1.encode();
+    h1.decode();
+    h1.saveEncodeFile(argv[1]);
+    h1.saveDecodeFile();
+    // cout << h1;
+ 
+
+    return 0;
+}
